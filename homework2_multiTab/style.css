@@ -1,6 +1,9 @@
 h1 {
     font-family: 'Pacifico', cursive;
-    ;
+    font-size: 80px;
+    line-height: 148px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 body, h2, h3, h4 {
@@ -70,6 +73,7 @@ img {
       grid-template-areas: 
       "a b b b b d"
       "a c c c c d";
+}
     .a {
         grid-area: a;
     }
@@ -82,7 +86,7 @@ img {
     .d {
         grid-area: d;
     }
-}
+
 
 .wrapper--c {
     display: grid;
@@ -93,6 +97,7 @@ img {
     grid-template-areas: 
     "a a a b b b"
     "c c d d e e";
+}
   .a {
       grid-area: a;
   }
@@ -108,5 +113,8 @@ img {
   .e {
       grid-area: e;
   }
-}
+
+  hr.solid {
+      border-top: 0.5px solid #bbb;
+  }
   
