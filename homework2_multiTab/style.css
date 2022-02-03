@@ -51,53 +51,68 @@ img {
 
 
 .wrapper--a {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px;
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
-    "a a b b"
-    "c d d d"
-    "e e e e"
+    "a1 a1 b1 b1"
+    "c1 d1 d1 d1"
+    "e1 e1 e1 e1"
   }
-  .a {
-    grid-area: a;
+  .a1 {
+    grid-area: a1;
+    text-align: center;
   }
-  .b {
-    grid-area: b;
+  .b1 {
+    grid-area: b1;
+    text-align: center;
   }
-  .c {
-    grid-area: c;
+  .c1 {
+    grid-area: c1;
   }
-  .d {
-    grid-area: d;
+  .d1 {
+    grid-area: d1;
   }
-  .e {
-    grid-area: e;
-  }
+  .e1 {
+    grid-area: e1;
+}
 
 .wrapper--b {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 32px;
-      padding: 30px;
-      grid-auto-rows: minmax(100px, auto);
-      grid-template-areas: 
-      "a b b b b d"
-      "a c c c c d";
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    
+    padding: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "a2 b2 b2 b2 b2 d2"
+    "a2 c2 c2 c2 c2 c2";
 }
-    .a {
-        grid-area: a;
+    .a2 {
+        grid-area: a2;
     }
-    .b {
-        grid-area: b;
+    .b2 {
+        grid-area: b2;
     }
-    .c {
-        grid-area: c;
+    .c2 {
+        grid-area: c2;
     }
-    .d {
-        grid-area: d;
-    }
+    .d2 {
+        grid-area: d2;
+        text-align: right;
+}
 
 
 .wrapper--c {
@@ -107,26 +122,26 @@ img {
     padding: 0px;
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
-    "a a a b b b"
-    "c c d d e e";
+    "a3 a3 a3 b3 b3 b3"
+    "c3 c3 d3 d3 e3 e3";
 }
-  .a {
-      grid-area: a;
+  .a3 {
+      grid-area: a3;
   }
-  .b {
-      grid-area: b;
+  .b3 {
+      grid-area: b3;
   }
-  .c {
-      grid-area: c;
+  .c3 {
+      grid-area: c3;
   }
-  .d {
-      grid-area: d;
+  .d3 {
+      grid-area: d3;
   }
-  .e {
-      grid-area: e;
-  }
+  .e3 {
+      grid-area: e3;
+}
 
-  hr.solid {
-      border-top: 0.5px solid #bbb;
-  }
+hr.solid {
+    border-top: 0.5px solid #dadada;
+}
   
