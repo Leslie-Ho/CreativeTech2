@@ -14,12 +14,24 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
 }
 
 nav li {
     display: inline-block;
     margin: 8px 16px 8px 16px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #FEB7FF
 }
 
 img {
