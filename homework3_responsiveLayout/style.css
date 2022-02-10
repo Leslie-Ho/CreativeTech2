@@ -23,12 +23,14 @@ html {
 }
 
 hr.solid {
-    border-top: 2px;
+    border-top: 4px;
     border-color: var(--hotPink);
 }
 
 .wrapper-header {
     display: grid;
+    margin-top: 24px;
+    margin-bottom: 24px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     "hero hero hero hero"
@@ -82,6 +84,8 @@ hr.solid {
 .wrapper-moreContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 24px;
+    margin-bottom: 24px;
     grid-template-areas: 
     "moreContentTitle moreContentTitle"
     "moreContent moreContent"
