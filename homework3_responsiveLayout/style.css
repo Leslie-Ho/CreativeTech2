@@ -41,11 +41,11 @@ hr.solid {
 .headText {
     grid-area: headText;
     text-align: left;
+    vertical-align: middle;
     background-color: black;
-    padding-bottom: 32px;
-    padding-top: 32px;
     padding-left: 16px;
     padding-right: 16px;
+    height: 300px;
 }
 
 .wrapper-highlights {
@@ -90,6 +90,7 @@ hr.solid {
 .moreContentTitle {
     grid-area: moreContentTitle;
     text-align: center;
+    vertical-align: top;
     margin: auto;
 }
 .moreContent {
@@ -98,15 +99,64 @@ hr.solid {
 
 .flexContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
+    justify-content: space-around;
 }
 
-
 @media (min-width: 744px) {
+    .banner {
+        background-color: var(--eggplantPurple);
+    }
     
+    hr.solid {
+        border-color: var(--eggplantPurple);
+    }
+
+    .wrapper-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "hero heroText"
+        "hero headText"
+    }
+
+    .wrapper-highlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "highlightCard1 highlightCard2" 
+        "highlightCard3 highlightCard4" 
+    }
+
+    .wrapper-moreContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "moreContentTitle moreContent"
+        "moreContentTitle moreContent"
+    }
 }
 
 @media (min-width: 1240px) {
+    .banner {
+        background-color: var(--forestGreen);
+    }
     
-}
+    hr.solid {
+        border-color: var(--forestGreen);
+    }
 
+    .wrapper-highlights {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "highlightCard1 highlightCard2 highlightCard3 highlightCard4" 
+    }
+
+    .wrapper-moreContent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "moreContentTitle moreContent moreContent"
+    }
+}
