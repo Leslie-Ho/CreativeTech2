@@ -91,14 +91,15 @@ hr.solid {
     grid-area: moreContentTitle;
     text-align: center;
     margin: auto;
-    padding: 0px;
-    
 }
 .moreContent {
     grid-area: moreContent;
-    text-align: left;
 }
-    
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 @media (min-width: 744px) {
