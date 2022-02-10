@@ -1,10 +1,105 @@
-img {
-    width: 100%;
+@import url(type.css);
+
+body {
+    margin: 0;
 }
 
-@media (min-width: 414px) {
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+html {
+    background-color: var(--background);
+}
+
+
+.banner {
+    background-color: var(--hotPink);
+    max-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+hr.solid {
+    border-top: 2px;
+    border-color: var(--hotPink);
+}
+
+.wrapper-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "hero hero hero hero"
+    "headText headText headText headText"
+}
+.hero {
+    grid-area: hero;
+    text-align: center;
+}
+.headText {
+    grid-area: headText;
+    text-align: left;
+    background-color: black;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wrapper-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "highlightCard1 highlightCard1 highlightCard1 highlightCard1" 
+    "highlightCard2 highlightCard2 highlightCard2 highlightCard2" 
+    "highlightCard3 highlightCard3 highlightCard3 highlightCard3" 
+    "highlightCard4 highlightCard4 highlightCard4 highlightCard4" 
+}
+
+.highlightCard1 {
+    grid-area: highlightCard1;
+    text-align: left;
+    padding: 16px;
+}
+.highlightCard2 {
+    grid-area: highlightCard2;
+    text-align: left;
+    padding: 16px;
+}
+.highlightCard3 {
+    grid-area: highlightCard3;
+    text-align: left;
+    padding: 16px;
+}
+.highlightCard4 {
+    grid-area: highlightCard4;
+    text-align: left;
+    padding: 16px;
+}
+
+.wrapper-moreContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "moreContentTitle moreContentTitle"
+    "moreContent moreContent"
+}
+
+.moreContentTitle {
+    grid-area: moreContentTitle;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
     
 }
+.moreContent {
+    grid-area: moreContent;
+    text-align: left;
+}
+    
+
 
 @media (min-width: 744px) {
     
