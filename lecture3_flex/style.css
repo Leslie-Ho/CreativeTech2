@@ -1,0 +1,22 @@
+@import url(reset.css);
+@import url(colors.css);
+@import url(type.css);
+
+nav {
+    background-color: var(--light-blue);
+}
+
+nav ul {
+    padding: 20px, 0px, 20px, 40px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        padding: 20px;
+        flex-direction: row;
+        
+    }
+}
