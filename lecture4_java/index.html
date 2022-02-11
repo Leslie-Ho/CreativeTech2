@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hohohehe Basic Javascript</title>
+    <style>
+        button.main-btn {
+            display: block;
+            margin: 8px auto;
+            width: 200px;
+        }
+    </style>
+</head>
+<body id="body">
+    <button class="main-btn" id="triggerBtn">BUY BUY BUY</button>
+    <h2 id="colorInfo"></h2>
+    <script>
+        // javascript goes here
+        //register the click from the button
+
+        //looks at the whole page for ID
+        //ID's are unique
+        let trgBtn = document.getElementById("triggerBtn");
+        let docBody = document.getElementById("body");
+        let clrInfo = document.getElementById("colorInfo");
+
+        trgBtn.addEventListener("click", function(){
+            console.info(trgBtn);
+            //css elements are always strings
+            // docBody.style.backgroundColor = "rgb(32, 102, 25)"
+            docBody.style.backgroundColor = "rgb(" + Math.random()*255 + "," + Math.random()*255 + "," + Math.random()*255 + ")" 
+            clrInfo.innerText = "neatoStringo"
+        })
+    </script>
+</body>
+</html>
