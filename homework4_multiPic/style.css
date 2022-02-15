@@ -1,0 +1,51 @@
+@import url(type.css);
+
+.button {
+    border: 2px solid black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+.wrapper-numButtons {
+    display: grid;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    "one two three four five six seven eight"
+}
+.one {
+    grid-area: one;
+    outline-style: solid;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
