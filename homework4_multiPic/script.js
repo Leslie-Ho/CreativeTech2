@@ -1,3 +1,6 @@
+var play = document.getElementById('playBtn');
+var pause = document.getElementById('pauseBtn');
+
 var bunnies = [
     'bunny1',
     'bunny2',
@@ -73,5 +76,9 @@ function playButtonPressed() {
     }
 }
 
-document.getElementById("playBtn").addEventListener("click", playButtonPressed)
-document.getElementById("pauseBtn").addEventListener("click", pauseButtonPressed)
+if (play) {
+    play.addEventListener("click", playButtonPressed, false);
+}
+if (pause) {
+    pause.addEventListener("click", pauseButtonPressed, false);
+}
