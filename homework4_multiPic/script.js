@@ -24,6 +24,7 @@ var bunnyButtons = [
 ];
 
 var isPlaying = false;
+var isAlreadyPlaying = false;
 var currButton = 0;
 
 function pickBun(evt, bunnyName) {
@@ -61,8 +62,8 @@ function pauseButtonPressed() {
 
 function playButtonPressed() {
     isPlaying = true;
-    if (isPlaying) {
-        console.log('started');
+    if(!isAlreadyPlaying) {
+        isAlreadyPlaying = true;
         var setIntervalId = setInterval(function() {
             if(currButton<7) {
                 document.getElementById(bunnyButtons[currButton + 1]).click();
@@ -71,6 +72,7 @@ function playButtonPressed() {
             } 
             if(!isPlaying) {
                 clearInterval(setIntervalId)
+                isAlreadyPlaying = false;
             }
         }, 150)
     }
