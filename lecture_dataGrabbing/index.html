@@ -32,7 +32,7 @@
 
         function setup() {
             createCanvas(800,800);
-            slider = createSlider(1, 1000, 1000, 10);
+            slider = createSlider(1, 1000, 100, 1);
             slider.position(20,80);
             slider.changed(fetchData);
         }
@@ -42,7 +42,7 @@
             clear();
             fill(255,181,165);
             values.forEach(v => {
-                circle(posX, map(v, 1150, 1400, 80, 300), 20);
+                circle(posX, map(v, 1150, 1400, 80, 150), 20);
                 posX += 5
             })
             posX = 0;
