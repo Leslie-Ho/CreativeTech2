@@ -1,0 +1,210 @@
+@import url(type.css);
+
+body {
+    margin: 0;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+.titleHeader {
+    margin: 16px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+html {
+    background-color: var(--background);
+}
+
+.banner {
+    background-color: var(--hotPink);
+    max-height: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bannerBlack {
+    background-color: black;
+    max-height: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+hr.solid {
+    border-top: 40px;
+    border-color: var(--hotPink);
+}
+
+.wrapper-header {
+    display: grid;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "hero hero hero hero"
+    "headText headText headText headText"
+}
+.hero {
+    grid-area: hero;
+    text-align: left;
+    background-color: black;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.headText {
+    grid-area: headText;
+    text-align: left;
+    background-color: black;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 400px;
+}
+
+.wrapper-highlights {
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "highlightCard1 highlightCard1 highlightCard1 highlightCard1" 
+    "highlightCard2 highlightCard2 highlightCard2 highlightCard2" 
+    "highlightCard3 highlightCard3 highlightCard3 highlightCard3" 
+    "highlightCard4 highlightCard4 highlightCard4 highlightCard4" 
+}
+
+.highlightCard1 {
+    grid-area: highlightCard1;
+    text-align: left;
+    padding: 16px;
+}
+.highlightCard2 {
+    grid-area: highlightCard2;
+    text-align: left;
+    padding: 16px;
+}
+.highlightCard3 {
+    grid-area: highlightCard3;
+    text-align: left;
+    padding: 16px;
+}
+.highlightCard4 {
+    grid-area: highlightCard4;
+    text-align: left;
+    padding: 16px;
+}
+
+.wrapper-twoImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "twoImages1 twoImages2"
+    "twoImages3 twoImages4";
+}
+
+.twoImages1 {
+    grid-area: twoImages1;
+    padding: 16px;
+}
+
+.twoImages2 {
+    grid-area: twoImages2;
+    padding: 16px;
+}
+
+.twoImages3 {
+    grid-area: twoImages3;
+    padding: 16px;
+}
+
+.twoImages4 {
+    grid-area: twoImages4;
+    padding: 16px;
+}
+
+.wrapper-moreContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    grid-template-areas: 
+    "moreContentTitle moreContentTitle"
+    "moreContent moreContent"
+}
+
+.moreContentTitle {
+    grid-area: moreContentTitle;
+    text-align: center;
+    vertical-align: top;
+    margin: auto;
+}
+.moreContent {
+    grid-area: moreContent;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+}
+
+@media (min-width: 744px) {
+    .banner {
+        background-color: var(--eggplantPurple);
+    }
+    
+    hr.solid {
+        border-color: var(--eggplantPurple);
+    }
+
+    .wrapper-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "hero heroText"
+        "hero headText"
+    }
+
+    .wrapper-highlights {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "highlightCard1 highlightCard2" 
+        "highlightCard3 highlightCard4" 
+    }
+
+    .wrapper-moreContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "moreContentTitle moreContent"
+        "moreContentTitle moreContent"
+    }
+}
+
+@media (min-width: 1240px) {
+    .banner {
+        background-color: var(--forestGreen);
+    }
+    
+    hr.solid {
+        border-color: var(--forestGreen);
+    }
+
+    .wrapper-highlights {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "highlightCard1 highlightCard2 highlightCard3 highlightCard4" 
+    }
+
+    .wrapper-moreContent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "moreContentTitle moreContent moreContent"
+    }
+}
