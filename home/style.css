@@ -21,6 +21,21 @@ html {
     background-color: var(--background);
 }
 
+.button {
+    background-color: var(--hotPink);
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.button:hover {
+    background-color: black;
+    color: var(--hotPink);
+}
+
 .banner {
     background-color: var(--hotPink);
     max-height: 48px;
@@ -38,6 +53,24 @@ html {
 hr.solid {
     border-top: 40px;
     border-color: var(--hotPink);
+}
+
+.wrapper-title {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "title title title title title titleButton"
+}
+
+.title {
+    grid-area: title;
+    text-align: left;
+}
+
+.titleButton {
+    grid-area: titleButton;
+    text-align: center;
+    margin: 16px;
 }
 
 .wrapper-header {
@@ -160,6 +193,14 @@ hr.solid {
         border-color: var(--eggplantPurple);
     }
 
+    .button {
+        background-color: var(--eggplantPurple);
+      }
+    
+    .button:hover {
+        color: var(--eggplantPurple);
+    }
+
     .wrapper-header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -192,6 +233,14 @@ hr.solid {
     
     hr.solid {
         border-color: var(--forestGreen);
+    }
+
+    .button {
+        background-color: var(--forestGreen);
+      }
+    
+    .button:hover {
+        color: var(--forestGreen);
     }
 
     .wrapper-highlights {
