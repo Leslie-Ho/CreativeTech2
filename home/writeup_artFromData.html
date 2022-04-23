@@ -29,5 +29,63 @@
         <h1> A SELF PORTRAIT </h1>
         <body class="darkFont"> I use a color and light sensor to record my surroundings for a week. The data I collected was organized and distributed into a continuous moving portrait of myself with movement driven by the brightness of the light around me and color reinterpreted to form this portrait. </body>
     </div>
+    <hr class="solid">
+    <div class="wrapper-highlights" style="margin-top: 24px; margin-bottom: 24px;">
+        <div class="highlightCard1">
+            <h2>How it's made</h2>
+            <body class="darkFont">
+                The sensors were connected and placed into a small used cake box and carried around whenever WIFI connectivity was available, primarily at home or within the ArtCenter WIFI network.
+            </body>
+        </div>
+        <div class="highlightCard2" style="background-image: url('./images/imageOfSelf/sensor_outside.jpg'); background-size: cover; height: 400px; padding: 16px;"></div>
+        <div class="hightlightCard3" style="background-image: url('./images/imageOfSelf/sensor_inside.jpg'); background-size: cover; height: 400px; padding: 16px;"></div>
+        <div class="hightlightCard4" style="background-image: url('./images/imageOfSelf/sensor_Laptop.jpg'); background-size: cover; height: 400px; padding: 16px;"></div>
+    </div>
+    <hr class="solid">
+    <div style="padding: 20px;">
+        <div style="margin-bottom: 16px;">
+            <h1>THE DATA</h1>
+            <body>
+                The data was recorded every minute or so into the Adafruit IO. Each data stream within the color data was relatively similar with the color leaning more into red than anything else. The light data was since I wasn't moving between different rooms too often with the cake box. When analyzing the data, I cut the red data values in half to highlight more of the blues and yellows I saw througout the day.
+                The gaps in data were from a few days of not collecting data.
+            </body>
+        </div>
+        <div class="wrapper-header" style="margin: 0px;">
+            <div class="hero" style="background-image: url('./images/imageOfSelf/blueFeed.jpg'); background-size: cover; height: 400px;"></div>
+            <div class="headText" style="background-image: url('./images/imageOfSelf/redFeed.jpg'); background-size: cover; height: 400px;"></div>
+        </div>
+        <div class="wrapper-header" style="margin: 0px;">
+            <div class="hero" style="background-image: url('./images/imageOfSelf/greenFeed.jpg'); background-size: cover; height: 400px;"></div>
+            <div class="headText" style="background-image: url('./images/imageOfSelf/lightFeed.jpg'); background-size: cover; height: 400px;"></div>
+        </div>
+    </div>
+    <hr class="solid">
+    <div>
+        <h1 class="titleHeader">
+            SHIFTING FROM DATA TO IMAGE
+        </h1>
+    </div>
+    <div class="wrapper-header">
+        <div class="hero" style="padding-top: 40px;">
+            <body>
+                Before working directly with the data, I decided to use some sample values and try to create an image. This was to avoid overcomplicating the process and making sure one thing worked before moving to the next. 
+            </body>
+        </div>
+        <div class="headText">
+            <div class="hero" style="background-image: url('./images/imageOfSelf/sensor_origImage.gif'); background-size: cover; height: 400px;"></div>
+        </div>
+    </div>
+    <div style="padding: 20px;">
+        <h2>I MADE A MISTAKE BUT IT WORKED</h2>
+        <body>
+            In the process of moving from OpenProcessing to Visual Studio, I started changing some of the values of the image without realizing and ended up with a very different looking visualization. I ended up changing the ellipse equation when rendering individual waves as well as the values of x and dx when calculating the individual waves. This caused the image to change from a sinWave image to a more layered visual. 
+        </body>
+        <body>
+            The resulting image is this:
+        </body>
+        <p style="text-align: center;">
+            <embed type="text/html" src="../homework5_artFromData/index.html" width="1400" height="500">
+        </p>
+    </div> 
 </body>
 </html>

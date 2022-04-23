@@ -55,6 +55,34 @@ hr.solid {
     border-color: var(--hotPink);
 }
 
+hr.none {
+    border-color: var(--background);
+}
+
+.bigTitle {
+    grid-area: bigTitle;
+    text-align: center;
+    position: relative;
+    height: 400px;
+}
+
+.centerObject {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.centerVertical {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .wrapper-title {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -100,7 +128,8 @@ hr.solid {
 
 .wrapper-highlights {
     display: grid;
-    
+    margin-top: 40px;
+    margin-bottom: 40px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
     "highlightCard1 highlightCard1 highlightCard1 highlightCard1" 
